@@ -1,0 +1,207 @@
+.light{
+    background-color: $colorBgLight;
+    .topBar {
+        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+        box-shadow: 0 1px 0 0 $color3;
+        h5 {
+            color: $color1;
+        }
+    }
+    .container {
+        header {
+            nav {
+                .logoDark{
+                    display: none;
+                }
+                .buttons{
+                    .createLnk {
+                        .create {
+                            background: $color2;
+                            border: 1px solid $color3;
+                            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                            color: $color3;
+                            &:hover{
+                                outline: 1px dotted $color3;
+                            }
+                        }
+                    }
+                    .theme{
+                    #buttonGrp{
+                            #selectTheme{
+                                background:$color2;
+                                border: 1px solid $color3;
+                                box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                                color: $color3;
+                                &:hover{
+                                    outline: 1px dotted $color3;
+                                }
+                            }
+                            #selectThemeArrow{
+                                background: $color2;
+                                border: 1px solid $color3;
+                                box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                                &:hover{
+                                    outline: 1px dotted $color3;
+                                }
+                            }
+                        }
+                        #themeOp {
+                            background: $colorDropLg;
+                            box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                            button{
+                                background: $color4;
+                                border: 1px solid $colorBorder;
+                                box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                                color: $color3;
+                                &:hover{
+                                    outline: 1px dotted $color3;
+                                }
+                                &:active{
+                                    background: #FFF4FD;
+                                    border: 1px solid #CCA6C9;
+                                    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+                    .myGifos{
+                        a{
+                            color: $color3;
+                            span{
+                                background-image: linear-gradient($color3,$color3);
+                            }
+                        }
+                        &:hover{
+                            outline: 1px dotted $color3;
+                        }
+                        &:active{
+                            color: $colorDropDk;
+                            span{
+                                background-image: linear-gradient($colorDropDk,$colorDropDk);
+                            }
+                        }
+                    }
+                }
+            }
+            .search{
+                background: $colorDropLg;
+                box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                .gradient{
+                    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+                    h4{
+                        color: $color1;
+                    }
+                }
+                .searchBody{
+                    .searchInput{
+                        #searchBar{
+                            background: $color1;
+                            border: 1px solid $color5;
+                            box-shadow: inset -2px -2px 0 0 $colorDropLg, inset 2px 2px 0 0 #000000;
+                        }
+                    }
+                    #search {
+                        background: $colorDropLg;
+                        border: 1px solid $colorBorder;
+                        box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                        color: #B4B4B4;
+                        .lupaDk{
+                            display: none;
+                        }
+                        &:hover{
+                            outline: 1px dotted $color3;
+                        }
+                        &:active{
+                            background: #E6BBE2;
+                            border: 1px solid #110038;
+                            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                        }
+                    }
+                }
+                .autocomplete{
+                    background: $colorDropLg;
+                    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                    ul{
+                        li{
+                            font-family: $font1, sans-serif;
+                            background: #F0F0F0;
+                            border: 1px solid #808080;
+                            box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                            &:hover{
+                                outline: 1px dotted $color3;
+                                background: #DBDBDB;;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #sugerencias{
+            .suggestTitle{
+                background: #FFFAFE;
+                border: 1px solid #E6BBE2;
+                box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+                h4{
+                    color: $color3;
+                }
+            }
+            .gifSuggest {
+                .window{
+                    background: $colorDropLg;
+                    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                    .bar {
+                        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+                        height: 24px;
+                        h4 {
+                            color: #FFFFFF;
+                        }
+                    }
+                    .gif{
+                        position: relative;
+                        .more{
+                            color: #FFFFFF;
+                            background: #4180F6;
+                            border: 1px solid #4C2F99;
+                            box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+                            &:hover{
+                                outline: 1px dotted $color3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .my_Gifos{
+            .misGifos{
+                background: #FFFAFE;
+                border: 1px solid #E6BBE2;
+                box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+                h4{
+                    color: $color3;
+                }
+            }
+        }
+        #trending{
+            .trendTitle{
+                background: #FFFAFE;
+                border: 1px solid #E6BBE2;
+                box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+                h4{
+                    color: $color3;
+                    letter-spacing: 0;
+                }
+            }
+        }
+        #searchResults{
+            .resultsTitle{
+                background: #FFFAFE;
+                border: 1px solid #E6BBE2;
+                box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+                h4{
+                    color: $color3;
+                    letter-spacing: 0;
+                }
+            }
+        }
+    }
+}

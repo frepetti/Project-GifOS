@@ -1,0 +1,1067 @@
+.light {
+  background-color: #fff4fd;
+}
+
+.light .topBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+}
+
+.light .topBar h5 {
+  color: #FFFFFF;
+}
+
+.light .container header nav .logoDark {
+  display: none;
+}
+
+.light .container header nav .buttons .createLnk .create {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  color: #110038;
+}
+
+.light .container header nav .buttons .createLnk .create:hover {
+  outline: 1px dotted #110038;
+}
+
+.light .container header nav .buttons .theme #buttonGrp #selectTheme {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  color: #110038;
+}
+
+.light .container header nav .buttons .theme #buttonGrp #selectTheme:hover {
+  outline: 1px dotted #110038;
+}
+
+.light .container header nav .buttons .theme #buttonGrp #selectThemeArrow {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.light .container header nav .buttons .theme #buttonGrp #selectThemeArrow:hover {
+  outline: 1px dotted #110038;
+}
+
+.light .container header nav .buttons .theme #themeOp {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.light .container header nav .buttons .theme #themeOp button {
+  background: #F0F0F0;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  color: #110038;
+}
+
+.light .container header nav .buttons .theme #themeOp button:hover {
+  outline: 1px dotted #110038;
+}
+
+.light .container header nav .buttons .theme #themeOp button:active {
+  background: #FFF4FD;
+  border: 1px solid #CCA6C9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.light .container header nav .buttons .myGifos a {
+  color: #110038;
+}
+
+.light .container header nav .buttons .myGifos a span {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#110038), to(#110038));
+  background-image: linear-gradient(#110038, #110038);
+}
+
+.light .container header nav .buttons .myGifos:hover {
+  outline: 1px dotted #110038;
+}
+
+.light .container header nav .buttons .myGifos:active {
+  color: #B4B4B4;
+}
+
+.light .container header nav .buttons .myGifos:active span {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#B4B4B4), to(#B4B4B4));
+  background-image: linear-gradient(#B4B4B4, #B4B4B4);
+}
+
+.light .container header .search {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.light .container header .search .gradient {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.light .container header .search .gradient h4 {
+  color: #FFFFFF;
+}
+
+.light .container header .search .searchBody .searchInput #searchBar {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.light .container header .search .searchBody #search {
+  background: #E6E6E6;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  color: #B4B4B4;
+}
+
+.light .container header .search .searchBody #search .lupaDk {
+  display: none;
+}
+
+.light .container header .search .searchBody #search:hover {
+  outline: 1px dotted #110038;
+}
+
+.light .container header .search .searchBody #search:active {
+  background: #E6BBE2;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.light .container header .search .autocomplete {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.light .container header .search .autocomplete ul li {
+  font-family: "Chakra Petch", sans-serif;
+  background: #F0F0F0;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.light .container header .search .autocomplete ul li:hover {
+  outline: 1px dotted #110038;
+  background: #DBDBDB;
+}
+
+.light .container #sugerencias .suggestTitle {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.light .container #sugerencias .suggestTitle h4 {
+  color: #110038;
+}
+
+.light .container #sugerencias .gifSuggest .window {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.light .container #sugerencias .gifSuggest .window .bar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  height: 24px;
+}
+
+.light .container #sugerencias .gifSuggest .window .bar h4 {
+  color: #FFFFFF;
+}
+
+.light .container #sugerencias .gifSuggest .window .gif {
+  position: relative;
+}
+
+.light .container #sugerencias .gifSuggest .window .gif .more {
+  color: #FFFFFF;
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.light .container #sugerencias .gifSuggest .window .gif .more:hover {
+  outline: 1px dotted #110038;
+}
+
+.light .container .my_Gifos .misGifos {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.light .container .my_Gifos .misGifos h4 {
+  color: #110038;
+}
+
+.light .container #trending .trendTitle {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.light .container #trending .trendTitle h4 {
+  color: #110038;
+  letter-spacing: 0;
+}
+
+.light .container #searchResults .resultsTitle {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.light .container #searchResults .resultsTitle h4 {
+  color: #110038;
+  letter-spacing: 0;
+}
+
+.dark {
+  background-color: #110038;
+}
+
+.dark .topBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+  -webkit-box-shadow: 0 1px 0 0 #FFFFFF;
+          box-shadow: 0 1px 0 0 #FFFFFF;
+}
+
+.dark .topBar h5 {
+  color: #FFFFFF;
+}
+
+.dark .container {
+  background-color: #110038;
+}
+
+.dark .container header nav .logoLight {
+  display: none;
+}
+
+.dark .container header nav .buttons .createLnk .create {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+}
+
+.dark .container header nav .buttons .createLnk .create:hover {
+  outline: 1px dotted #110038;
+}
+
+.dark .container header nav .buttons .theme #buttonGrp #selectTheme {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+}
+
+.dark .container header nav .buttons .theme #buttonGrp #selectTheme:hover {
+  outline: 1px dotted #110038;
+}
+
+.dark .container header nav .buttons .theme #buttonGrp #selectThemeArrow {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .container header nav .buttons .theme #buttonGrp #selectThemeArrow img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.dark .container header nav .buttons .theme #buttonGrp #selectThemeArrow:hover {
+  outline: 1px dotted #110038;
+}
+
+.dark .container header nav .buttons .theme #themeOp {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .container header nav .buttons .theme #themeOp button {
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 1px 1px 0 0 #FFFFFF;
+  color: #110038;
+}
+
+.dark .container header nav .buttons .theme #themeOp button:hover {
+  outline: 1px dotted #110038;
+}
+
+.dark .container header nav .buttons .theme #themeOp button:active {
+  background: #2E32FB;
+  border: 1px solid rgba(51, 53, 143, 0.2);
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .container header nav .buttons .myGifos a {
+  color: #FFFFFF;
+}
+
+.dark .container header nav .buttons .myGifos:hover {
+  outline: 1px dotted #FFFFFF;
+}
+
+.dark .container header nav .buttons .myGifos:hover span {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FFFFFF));
+  background-image: linear-gradient(#FFFFFF, #FFFFFF);
+}
+
+.dark .container header .search {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .container header .search .gradient {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.dark .container header .search .gradient h4 {
+  color: #FFFFFF;
+}
+
+.dark .container header .search .searchBody .searchInput #searchBar {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #000000;
+}
+
+.dark .container header .search .searchBody #search {
+  background: #EE3EFE;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+}
+
+.dark .container header .search .searchBody #search .lupaLg {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.dark .container header .search .searchBody #search:hover {
+  outline: 1px dotted #110038;
+}
+
+.dark .container header .search .autocomplete {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .container header .search .autocomplete ul li {
+  font-family: "Chakra Petch", sans-serif;
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #8F8F8F, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .container header .search .autocomplete ul li:hover {
+  outline: 1px dotted #110038;
+  background: #DBDBDB;
+}
+
+.dark .container #sugerencias .suggestTitle {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.dark .container #sugerencias .suggestTitle h4 {
+  color: #110038;
+}
+
+.dark .container #sugerencias .gifSuggest .window {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.dark .container #sugerencias .gifSuggest .window .bar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+  height: 24px;
+}
+
+.dark .container #sugerencias .gifSuggest .window .bar h4 {
+  color: #FFFFFF;
+}
+
+.dark .container #sugerencias .gifSuggest .window .gif {
+  position: relative;
+  border: 1px solid black;
+}
+
+.dark .container #sugerencias .gifSuggest .window .gif .more {
+  color: #FFFFFF;
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .container #sugerencias .gifSuggest .window .gif .more:hover {
+  outline: 1px dotted #FFFFFF;
+}
+
+.dark .container .my_Gifos .misGifos {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.dark .container .my_Gifos .misGifos h4 {
+  color: #110038;
+}
+
+.dark .container #trending .trendTitle {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.dark .container #trending .trendTitle h4 {
+  color: #110038;
+  letter-spacing: 0;
+}
+
+.dark .container #searchResults .resultsTitle {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.dark .container #searchResults .resultsTitle h4 {
+  color: #110038;
+  letter-spacing: 0;
+}
+
+body .topBar {
+  margin: 0 auto;
+  height: 23px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+}
+
+body .topBar h5 {
+  padding: 4px 0 0 8px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+body .container {
+  margin: 0 auto;
+}
+
+body .container header {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body .container header nav {
+  margin: 35px 0 16px 0;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container header nav .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container header nav .buttons .createLnk {
+  margin-right: 16px;
+  display: block;
+}
+
+body .container header nav .buttons .createLnk .create {
+  width: 144px;
+  height: 36px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+body .container header nav .buttons .createLnk .create:hover {
+  outline-offset: -5px;
+}
+
+body .container header nav .buttons .theme {
+  font-size: 0;
+  width: 170px;
+  margin-right: 16.5px;
+}
+
+body .container header nav .buttons .theme #buttonGrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .container header nav .buttons .theme #buttonGrp #selectTheme {
+  width: 134px;
+  height: 36px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+body .container header nav .buttons .theme #buttonGrp #selectTheme:hover {
+  outline-offset: -5px;
+}
+
+body .container header nav .buttons .theme #buttonGrp #selectThemeArrow {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .container header nav .buttons .theme #buttonGrp #selectThemeArrow:hover {
+  outline-offset: -5px;
+}
+
+body .container header nav .buttons .theme #themeOp button {
+  width: 150px;
+  height: 36px;
+  margin: 10px 10px 0 10px;
+  border: 1px solid #808080;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+body .container header nav .buttons .theme #themeOp button:hover {
+  outline-offset: -5px;
+}
+
+body .container header nav .buttons .theme .dropDwn {
+  width: 170px;
+  height: 102px;
+  position: absolute;
+  z-index: 5;
+  display: none;
+}
+
+body .container header nav .buttons .theme .display {
+  display: block;
+}
+
+body .container header nav .buttons .myGifos {
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+}
+
+body .container header nav .buttons .myGifos a {
+  font-family: "Chakra Petch";
+  padding-left: 5px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+body .container header nav .buttons .myGifos a span {
+  background-position: bottom center;
+  background-size: 8px 1.5px;
+  background-repeat: no-repeat;
+  padding-top: 0.5px;
+}
+
+body .container header nav .buttons .myGifos:hover {
+  outline-offset: -5px;
+}
+
+body .container header .search {
+  width: 1200px;
+  height: 99px;
+}
+
+body .container header .search .gradient {
+  position: relative;
+  top: 3px;
+  margin-left: 3px;
+  width: 1194px;
+  height: 24px;
+}
+
+body .container header .search .gradient h4 {
+  padding: 4px 0 0 6px;
+  font-family: "Chakra Petch";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+body .container header .search .searchBody {
+  margin-bottom: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 72px;
+}
+
+body .container header .search .searchBody .searchInput #searchBar {
+  margin: 0px 3px 0 12px;
+  height: 48px;
+  width: 1057px;
+  text-indent: 16px;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+body .container header .search .searchBody .searchInput #searchBar::-webkit-input-placeholder {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+}
+
+body .container header .search .searchBody .searchInput #searchBar:-ms-input-placeholder {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+}
+
+body .container header .search .searchBody .searchInput #searchBar::-ms-input-placeholder {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+}
+
+body .container header .search .searchBody .searchInput #searchBar::placeholder {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+}
+
+body .container header .search .searchBody #search {
+  margin-right: 18px;
+  width: 102px;
+  height: 36px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+body .container header .search .searchBody #search:hover {
+  outline-offset: -5px;
+}
+
+body .container header .search .searchBody #search img {
+  height: 16px;
+  width: 16px;
+}
+
+body .container header .search .autocomplete {
+  position: absolute;
+  height: 160px;
+  width: 1200px;
+  z-index: 1;
+  display: none;
+}
+
+body .container header .search .autocomplete ul {
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .container header .search .autocomplete ul li {
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 35px;
+  position: relative;
+  font-family: "Chakra Petch", sans-serif;
+  margin-left: 12px;
+  height: 36px;
+  width: 1057px;
+  text-indent: 16px;
+  z-index: 2;
+  vertical-align: middle;
+}
+
+body .container header .search .autocomplete ul li:hover {
+  outline-offset: -5px;
+}
+
+body .container header .search .display {
+  display: block;
+}
+
+body .container #sugerencias {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+
+body .container #sugerencias .suggestTitle {
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container #sugerencias .suggestTitle h4 {
+  padding-left: 7px;
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+body .container #sugerencias .gifSuggest {
+  height: 313px;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container #sugerencias .gifSuggest .window {
+  width: 288px;
+  height: 313px;
+}
+
+body .container #sugerencias .gifSuggest .window .bar {
+  position: relative;
+  margin: 0 4px 0 4px;
+  padding: 0px 3px 0 4px;
+  top: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 24px;
+}
+
+body .container #sugerencias .gifSuggest .window .bar h4 {
+  padding-left: 3px;
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+body .container #sugerencias .gifSuggest .window .gif {
+  position: relative;
+  top: 4px;
+  margin: 2px 4px 0 4px;
+  height: 280px;
+  width: 280px;
+}
+
+body .container #sugerencias .gifSuggest .window .gif img {
+  height: 280px;
+  width: 280px;
+}
+
+body .container #sugerencias .gifSuggest .window .gif .more {
+  position: absolute;
+  left: 14px;
+  top: 231px;
+  margin: 0 auto;
+  z-index: 1;
+  height: 34px;
+  width: 81px;
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+body .container #sugerencias .gifSuggest .window .gif .more:hover {
+  outline-offset: -5px;
+}
+
+body .container .my_Gifos {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 64px;
+  padding-bottom: 16px;
+}
+
+body .container .my_Gifos .misGifos {
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .my_Gifos .misGifos h4 {
+  padding-left: 7px;
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+body .container .my_Gifos .gifos {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .my_Gifos .gifos div {
+  border: red solid 2px;
+  height: 298px;
+  width: 288px;
+  margin-bottom: 16px;
+}
+
+body .container #trending {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+
+body .container #trending .trendTitle {
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container #trending .trendTitle h4 {
+  padding-left: 7px;
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+body .container #trending #gifTrend {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container #trending #gifTrend .gifCont {
+  margin-bottom: 16px;
+  height: 298px;
+  width: 288px;
+}
+
+body .container #trending #gifTrend .gifCont img {
+  height: 298px;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+}
+
+body .container #trending #gifTrend :nth-child(5n) {
+  width: 592px;
+  overflow: hidden;
+}
+
+body .container #trending #gifTrend :nth-child(5n) img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .container #searchResults {
+  display: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 64px;
+  padding-bottom: 20px;
+}
+
+body .container #searchResults .resultsTitle {
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container #searchResults .resultsTitle h4 {
+  padding-left: 7px;
+  font-family: "Chakra Petch";
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+body .container #searchResults #gifResults {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container #searchResults #gifResults .gifCont {
+  height: 298px;
+  width: 288px;
+  margin-bottom: 16px;
+}
+
+body .container #searchResults #gifResults .gifCont img {
+  height: 298px;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+}
+
+body .container #searchResults #gifResults :nth-child(5n) {
+  width: 592px;
+  overflow: hidden;
+}
+
+body .container #searchResults #gifResults :nth-child(5n) img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */
