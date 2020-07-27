@@ -138,7 +138,7 @@ suggestedGifs
             document.getElementById('newGif'+[i]).src = url;
             titleString = datos.data[i].title;
             titleArray = titleString.split(' ');
-            title.innerHTML = '#'+titleArray[0]+' '+titleArray[1]+' '+titleArray[2];
+            title.innerHTML = '#'+titleArray[0]+' #'+titleArray[1]+' #'+titleArray[2];
         };
     })
     .catch(error => console.error('error'))
