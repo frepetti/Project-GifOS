@@ -165,6 +165,121 @@
                 }
             }
         }
+        #gifRecorder{
+            #recorderIntro{
+                background: #B4B4B4;
+                box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+                .gradient{
+                    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+                    h4{
+                        color: $color1;
+                    }
+                }
+                .recorderTitle{
+                    h4 {
+                        color: $color3;
+                    }
+                }
+                .introBody{
+                    p{
+                        color: $color3;
+                    }
+                }
+                .introBtns{
+                    .btn{
+                        color: $color3;
+                        &:hover{
+                            outline: 1px dotted $color3;
+                        }
+                    }
+                    #cancelBtn{
+                        background: #110038;
+                        color: #FFFFFF;
+                        border: 1px solid #B4B4B4;
+                        box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+                        &:hover{
+                            background: #110038;
+                            border: 1px solid #B4B4B4;
+                            outline: 1px dotted #FFFFFF;
+                            box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+                        }
+                    }
+                    #startBtn{
+                        background: #EE3EFE;
+                        color: #FFFFFF;
+                        border: 1px solid #110038;
+                        box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+                        &:hover{
+                            background: #CE36DB;
+                            border: 1px solid #110038;
+                            box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+                        }
+                    }
+                }
+            }
+            #recorder{
+                background: #B4B4B4;
+                box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+                .gradient{
+                    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+                    h4{
+                        color: $color1;
+                    }
+                }
+                #recorderDisplay{
+                    background: #FFFFFF;
+                    border: 1px solid #979797;
+                    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+                }
+                #recorderPreCapture{
+                    #captureGrp{
+                        .btn{
+                            background: #EE3EFE;
+                            border: 1px solid #110038;
+                            box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+                        }
+                        #captureCam{
+                            img{
+                                filter: invert(100%);
+                            }
+                        }
+                        #captureBtn{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+                #recorderLive{
+                    .counterLive{
+                        background: #FFFFFF;
+                        border: 1px solid #979797;
+                        box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+                        span{
+                            color: $color3;
+                        }
+                    }
+                    #stopGrp{
+                        .stopBtn{
+                            background: #FF6161;
+                            border: 1px solid #110038;
+                            box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+                        }
+                        #stopBtn{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+            #recorderEnd{
+                background: #E6E6E6;
+                box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                .gradient{
+                    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+                    h4{
+                        color: $color1;
+                    }
+                }
+            }
+        }
         .my_Gifos{
             .misGifos{
                 background: #FFFAFE;

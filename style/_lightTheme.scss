@@ -113,7 +113,7 @@
                         }
                         &:active{
                             background: #E6BBE2;
-                            border: 1px solid #110038;
+                            border: 1px solid $color3;
                             box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
                         }
                     }
@@ -167,6 +167,110 @@
                                 outline: 1px dotted $color3;
                             }
                         }
+                    }
+                }
+            }
+        }
+        #gifRecorder{
+            #recorderIntro{
+                background: #E6E6E6;
+                box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                .gradient{
+                    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+                    h4{
+                        color: $color1;
+                    }
+                }
+                .recorderTitle{
+                    h4 {
+                        color: $color3;
+                    }
+                }
+                .introBody{
+                    p{
+                        color: $color3;
+                    }
+                }
+                .introBtns{
+                    .btn{
+                        color: $color3;
+                        &:hover{
+                            outline: 1px dotted $color3;
+                        }
+                    }
+                    #cancelBtn{
+                        background: #FFF4FD;
+                        border: 1px solid #110038;
+                        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                        &:hover{
+                            background: #F0E5EE;
+                            border: 1px solid #110038;
+                            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                        }
+                    }
+                    #startBtn{
+                        background: #F7C9F3;
+                        border: 1px solid #110038;
+                        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                        &:hover{
+                            background: #E6BBE2;
+                            border: 1px solid #110038;
+                            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                        }
+                    }
+                }
+            }
+            #recorder{
+                background: #E6E6E6;
+                box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                .gradient{
+                    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+                    h4{
+                        color: $color1;
+                    }
+                }
+                #recorderDisplay{
+                    background: #FFFFFF;
+                    border: 1px solid #979797;
+                    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+                }
+                #recorderPreCapture{
+                    #captureGrp{
+                        .btn{
+                            background: #F7C9F3;
+                            border: 1px solid #110038;
+                            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                        }
+                    }
+                }
+                #recorderLive{
+                    .counterLive{
+                        background: #FFFFFF;
+                        border: 1px solid #979797;
+                        box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+                        span{
+                            color: $color3;
+                        }
+                    }
+                    #stopGrp{
+                        .stopBtn{
+                            background: #FF6161;
+                            border: 1px solid #110038;
+                            box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+                        }
+                        #stopBtn{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+            #recorderEnd{
+                background: #E6E6E6;
+                box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                .gradient{
+                    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+                    h4{
+                        color: $color1;
                     }
                 }
             }

@@ -16,9 +16,10 @@ body{
             letter-spacing: 0;
         }
     }
-    .container {
-        margin: 0 auto;
 
+    .container {
+
+        margin: 0 auto;
         header {
             max-width: 1200px;
             margin: 0 auto;
@@ -68,12 +69,8 @@ body{
                                 }
                             }
                             #selectThemeArrow{
-                                display: inline-block;
                                 width: 36px;
                                 height: 36px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -137,12 +134,13 @@ body{
                 height: 99px;
                 .gradient{
                     position: relative;
+                    box-sizing: border-box;
                     top: 3px;
                     margin-left: 3px;
                     width: 1194px;
                     height: 24px;
                     h4{
-                        padding: 4px 0 0 6px;
+                        padding: 4px 0 0 4px;
                         font-family: $font1;
                         font-weight: 700;
                         font-size: 14px;
@@ -293,6 +291,222 @@ body{
                 }
             }
         }
+        #gifRecorder{
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 59px;
+            margin-bottom: 153px;
+            display: flex;
+            justify-content: center;
+            #recorderIntro{
+                width: 684px;
+                height: 386px;
+                .gradient{
+                    position: relative;
+                    box-sizing: border-box;
+                    display: flex;
+                    top: 3px;
+                    margin-left: 3px;
+                    width: 678px;
+                    height: 24px;
+                    justify-content: space-between;
+                    padding: 0 2px 0 2px;
+                    h4{
+                        padding: 4px 0 0 4px;
+                        font-family: $font1;
+                        font-weight: 700;
+                        font-size: 14px;
+                        letter-spacing: 0;
+                    }
+                }
+                .recorderTitle{
+                    display: flex;
+                    justify-content: left;
+                    padding:30px 0 7px 25px;
+                    h4 {
+                        font-family: $font1;
+                        padding-left: 16px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: $color3;
+                        letter-spacing: 0;
+                        line-height: 22px;
+                    }
+                }
+                .introBody{
+                    padding:0 0 18px 73px;
+                    p{
+                        font-family: $font1;
+                        font-size: 14px;
+                        color: #110038;
+                        letter-spacing: 0;
+                        line-height: 20px;
+                        padding-bottom: 10px;
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .introBtns{
+                    width: 320px;
+                    position: relative;
+                    left: 344px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    .btn{
+                        height: 36px;
+                        width: 144px;
+                        font-family: $font1;
+                        font-size: 16px;
+                        color: #110038;
+                        letter-spacing: 0;
+                        text-align: center;
+                        line-height: 18px;
+                        &:hover{
+                            outline-offset: -5px;
+                        }
+                    }
+                }
+            }
+            #recorder{
+                width: 860px;
+                height: 548px;
+                .gradient{
+                    position: relative;
+                    box-sizing: border-box;
+                    display: flex;
+                    top: 3px;
+                    margin-left: 3px;
+                    width: 854px;
+                    height: 24px;
+                    justify-content: space-between;
+                    padding: 0 2px 0 2px;
+                    h4{
+                        padding: 4px 0 0 4px;
+                        font-family: $font1;
+                        font-weight: 700;
+                        font-size: 14px;
+                        letter-spacing: 0;
+                    }
+                }
+                #recorderDisplay{
+                    height: 440px;
+                    width: 838px;
+                    margin: 8px 14px 21px 8px;
+                }
+                #recorderPreCapture{
+                    #captureGrp{
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+                        justify-content: flex-end;
+                        right: 16px;
+                        #captureCam{
+                            height: 36px;
+                            width: 36px;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                        }
+                        #captureBtn{
+                            font-family: $font1;
+                            font-size: 16px;
+                            letter-spacing: 0;
+                            text-align: center;
+                            line-height: 18px;
+                            height: 36px;
+                            width: 144px;
+                        }
+                    }
+                }
+                #recorderLive{
+                    justify-content: space-between;
+                    padding: 0 16px 16px 11px;
+                    .counterLive{
+                        display: flex;
+                        align-content: center;
+                        justify-content: center;
+                        height: 36px;
+                        width: 124px;
+                        span{
+                            font-family: $font1;
+                            font-size: 16px;
+                            letter-spacing: 0;
+                            line-height: 36px;
+                        }
+                    }
+                    #stopGrp{
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+                        justify-content: flex-end;
+                        #recordingBtn{
+                            height: 36px;
+                            width: 36px;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                        }
+                        #stopBtn{
+                            height: 36px;
+                            width: 144px;
+                            font-family: $font1;
+                            font-size: 16px;
+                            letter-spacing: 0;
+                            text-align: center;
+                            line-height: 18px;
+                        }
+                    }
+                }
+                #recorderPreview{
+                    justify-content: space-between;
+                    padding: 0 16px 16px 11px;
+                    .counterProg{
+                        display: flex;
+                        justify-content: space-between;
+                        #play{
+                            height: 20px;
+                            width: 20px;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .progressBar{
+                            width: 240px;
+                            height: 24px;
+                        }
+                    }
+                    .endBtns{
+                        .btn{
+                            height: 36px;
+                            width: 144px;
+                        }
+                    }
+                }
+            }
+            #recorderEnd{
+                width: 684px;
+                height: 386px;
+                .gradient{
+                    position: relative;
+                    box-sizing: border-box;
+                    display: flex;
+                    top: 3px;
+                    margin-left: 3px;
+                    width: 854px;
+                    height: 24px;
+                    justify-content: space-between;
+                    padding: 0 2px 0 2px;
+                    h4{
+                        padding: 4px 0 0 4px;
+                        font-family: $font1;
+                        font-weight: 700;
+                        font-size: 14px;
+                        letter-spacing: 0;
+                    }
+                }
+                
+            }
+        }
         .my_Gifos{
             max-width: 1200px;
             margin: 0 auto;
@@ -411,4 +625,13 @@ body{
             }
         }
     }
+}
+.noDisplay{
+    display: none;
+}
+.display{
+    display: block;
+}
+.displayFlex{
+    display: flex;
 }
