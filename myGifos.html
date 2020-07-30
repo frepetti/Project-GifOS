@@ -71,9 +71,9 @@
                         <img src="./assets/button close.svg" alt="close">
                     </div>
                     <div id="recorderDisplay" class="display">
-
+                        <video src="" id="gifRecord"></video>
                     </div>
-                    <div id="recorderPreCapture"  class="noDisplay">
+                    <div id="recorderPreCapture"  class="display">
                         <div id="captureGrp">
                             <button type="button" id="captureCam" class="btn">
                                 <img src="./assets/camera.svg" alt="camera">
@@ -92,7 +92,7 @@
                             <button type="button" id="stopBtn" class="stopBtn">Listo</button>
                         </div>
                     </div>
-                    <div id="recorderPreview" class="displayFlex">
+                    <div id="recorderPreview" class="noDisplay">
                         <div class="counterProg">
                             <div class="counterPvw">
                                 <span>00:00:03:06</span>
@@ -191,5 +191,7 @@
         </div>
     </div>
     <script src="script/app.js"></script>
+    <script src="script/Reproducto.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
 </body>
 </html>

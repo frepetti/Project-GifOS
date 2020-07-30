@@ -354,6 +354,23 @@
   letter-spacing: 0;
 }
 
+.light .container #trending #gifTrend .gifCont:hover {
+  border: 1px solid #110038;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+}
+
+.light .container #trending #gifTrend .gifCont .hoverBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.light .container #trending #gifTrend .gifCont .hoverBar span {
+  color: #FFFFFF;
+}
+
 .light .container #searchResults .resultsTitle {
   background: #FFFAFE;
   border: 1px solid #E6BBE2;
@@ -545,7 +562,6 @@
 .dark .container #sugerencias .gifSuggest .window .bar {
   background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
   background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
-  height: 24px;
 }
 
 .dark .container #sugerencias .gifSuggest .window .bar h4 {
@@ -554,7 +570,6 @@
 
 .dark .container #sugerencias .gifSuggest .window .gif {
   position: relative;
-  border: 1px solid black;
 }
 
 .dark .container #sugerencias .gifSuggest .window .gif .more {
@@ -727,6 +742,22 @@
 .dark .container #trending .trendTitle h4 {
   color: #110038;
   letter-spacing: 0;
+}
+
+.dark .container #trending #gifTrend .gifCont:hover {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+  outline: 1px dotted #FFFFFF;
+}
+
+.dark .container #trending #gifTrend .gifCont .hoverBar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.dark .container #trending #gifTrend .gifCont .hoverBar span {
+  color: #FFFFFF;
 }
 
 .dark .container #searchResults .resultsTitle {
@@ -1293,6 +1324,13 @@ body .container #gifRecorder #recorder #recorderDisplay {
   margin: 8px 14px 21px 8px;
 }
 
+body .container #gifRecorder #recorder #recorderDisplay video {
+  height: 440px;
+  width: 838px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body .container #gifRecorder #recorder #recorderPreCapture #captureGrp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1548,16 +1586,61 @@ body .container #trending #gifTrend .gifCont {
   margin-bottom: 16px;
   height: 298px;
   width: 288px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 body .container #trending #gifTrend .gifCont img {
-  height: 298px;
+  height: 296px;
   width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
   -o-object-position: center;
      object-position: center;
   overflow: hidden;
+}
+
+body .container #trending #gifTrend .gifCont .hoverBar {
+  width: 282px;
+  height: 20px;
+  z-index: 2;
+  top: 276px;
+  display: none;
+  margin-left: 3px;
+  margin-bottom: 2px;
+  position: absolute;
+}
+
+body .container #trending #gifTrend .gifCont .hoverBar span {
+  padding-left: 3px;
+  font-family: "Chakra Petch";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+body .container #trending #gifTrend .gifCont:hover {
+  outline-offset: -3px;
+}
+
+body .container #trending #gifTrend .gifCont:hover img {
+  padding-left: 2px;
+  height: 291px;
+  width: 284px;
+}
+
+body .container #trending #gifTrend .gifCont:hover .hoverBar {
+  display: block;
 }
 
 body .container #trending #gifTrend :nth-child(5n) {
@@ -1569,6 +1652,24 @@ body .container #trending #gifTrend :nth-child(5n) img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+body .container #trending #gifTrend :nth-child(5n) .hoverBar {
+  width: 586px;
+}
+
+body .container #trending #gifTrend :nth-child(5n):hover {
+  outline-offset: -3px;
+}
+
+body .container #trending #gifTrend :nth-child(5n):hover img {
+  padding-left: 2px;
+  height: 291px;
+  width: 588px;
+}
+
+body .container #trending #gifTrend :nth-child(5n):hover .hoverBar {
+  display: block;
 }
 
 body .container #searchResults {

@@ -393,6 +393,11 @@ body{
                     height: 440px;
                     width: 838px;
                     margin: 8px 14px 21px 8px;
+                    video{
+                        height: 440px;
+                        width: 838px;
+                        object-fit: cover;
+                    }
                 }
                 #recorderPreCapture{
                     #captureGrp{
@@ -562,12 +567,45 @@ body{
                     margin-bottom: 16px;
                     height: 298px;
                     width: 288px;
+                    display: flex;
+                    position: relative;
+                    //box-sizing: border-box;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
                     img{
-                        height: 298px;
+                        height: 296px;
                         width: 100%;
                         object-fit: fill;
                         object-position: center;
                         overflow: hidden;
+                    }
+                    .hoverBar{
+                        width: 282px;
+                        height: 20px;
+                        z-index: 2;
+                        top: 276px;
+                        display: none;
+                        margin-left: 3px;
+                        margin-bottom: 2px;
+                        position: absolute;
+                        span{
+                            padding-left: 3px;
+                            font-family: $font1;
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+                    }
+                    &:hover{
+                        outline-offset: -3px;
+                    }
+                    &:hover img{
+                        padding-left: 2px;
+                        height: 291px;
+                        width: 284px;
+                    }
+                    &:hover .hoverBar{
+                        display: block;
                     }
                 }
                 :nth-child(5n){
@@ -576,6 +614,20 @@ body{
                     img{
                         width: 100%;
                         object-fit: cover;
+                    }
+                    .hoverBar{
+                        width: 586px;
+                    }
+                    &:hover{
+                        outline-offset: -3px;
+                    }
+                    &:hover img{
+                        padding-left: 2px;
+                        height: 291px;
+                        width: 588px;
+                    }
+                    &:hover .hoverBar{
+                        display: block;
                     }
                 }
             }

@@ -1,5 +1,13 @@
 const myKey = "RoFq898LQn130ZY7iP2TBlrDuefnjvV0";
 
+//Get theme on opening window
+window.onload = loadTheme()
+
+function loadTheme() {
+    let theme = window.localStorage.getItem('theme');
+    document.getElementById('theme').className = theme;
+}
+
 //Open Theme Menu
 
 document.getElementById('buttonGrp').addEventListener('click',openMenu);
@@ -16,11 +24,24 @@ document.getElementById('dark').addEventListener('click', setDark);
 
 function setLight() {
     document.getElementById('theme').className = 'light';
+    //Save Theme
+    let theme = document.getElementById('theme').className;
+    window.localStorage.setItem('theme',theme);
+    //Hide theme Dropdown
+    document.getElementById('themeOp').classList.toggle('display');
 }
 
 function setDark() {
     document.getElementById('theme').className = 'dark';
+    //Save Theme
+    let theme = document.getElementById('theme').className;
+    window.localStorage.setItem('theme',theme);
+    //Hide theme Dropdown
+    document.getElementById('themeOp').classList.toggle('display');
 }
+
+
+
 
 //Search gifs
 
@@ -51,10 +72,10 @@ function search() {
                 document.getElementsByClassName('resultsTitle')[0].scrollIntoView();
             }
         })
-        .catch(error => console.error('error'))
+        .catch(error => console.error(error))
 }
 
-//Autocomplete Search bar
+//Show Search suggestions
 
 function displaySugg() {
     let autocompleteCont = document.getElementsByClassName('autocomplete')[0];
@@ -62,8 +83,8 @@ function displaySugg() {
         autocompleteCont.classList.toggle('display');
     }
 }
-document.getElementById('searchBar').addEventListener('input',displaySugg);
-document.getElementById('searchBar').addEventListener('input',autocomplete);
+
+//Autocomplete Search bar
 function autocomplete() {
     let auto = document.getElementsByClassName('auto');
     let searchTerm = document.getElementById('searchBar').value;
@@ -79,6 +100,9 @@ function autocomplete() {
         })
 }
 
+document.getElementById('searchBar').addEventListener('input',displaySugg);
+document.getElementById('searchBar').addEventListener('input',autocomplete);
+
 
 //Click autocomplete
 
@@ -86,7 +110,7 @@ document.getElementsByClassName('auto')[0].addEventListener('click',autoSearch);
 document.getElementsByClassName('auto')[1].addEventListener('click',autoSearch);
 document.getElementsByClassName('auto')[2].addEventListener('click',autoSearch);
 
-//Autocomplete to search
+//Search clicked suggestion
 
 function autoSearch() {
     document.getElementById('searchBar').value = this.innerHTML;
@@ -94,17 +118,6 @@ function autoSearch() {
 }
 
 //Suggested gifs
-/*
-
-let sugg1 = fetch("https://api.giphy.com/v1/gifs/random?api_key="+myKey);
-let sugg2 = fetch("https://api.giphy.com/v1/gifs/random?api_key="+myKey);
-let sugg3 = fetch("https://api.giphy.com/v1/gifs/random?api_key="+myKey);
-let sugg4 = fetch("https://api.giphy.com/v1/gifs/random?api_key="+myKey);
-
-
-Promise.all([sugg1,sugg2,sugg3,sugg4])
-
-*/
 
 let suggestedGifs = fetch("https://api.giphy.com/v1/gifs/trending?api_key="+myKey+"&offset=20&limit=4");
 suggestedGifs
@@ -122,6 +135,7 @@ suggestedGifs
             let gifSuggest = document.getElementsByClassName('gifSuggest')[0];
             window.className = 'window';
             bar.className = 'bar';
+            title.className = 'gifTitle'
             closeBtn.src = './assets/button3.svg';
             gifCont.className = 'gif';
             newGif.id = 'newGif'+[i];
@@ -136,13 +150,34 @@ suggestedGifs
             moreBtn.innerHTML = 'Ver más...'
             moreBtn.setAttribute('type', 'button');
             document.getElementById('newGif'+[i]).src = url;
-            titleString = datos.data[i].title;
-            titleArray = titleString.split(' ');
-            title.innerHTML = '#'+titleArray[0]+' #'+titleArray[1]+' #'+titleArray[2];
+            let titleString = datos.data[i].title;
+            let titleArray = titleString.split(' ');
+            title.innerHTML = '#'+titleArray[0]+' '+titleArray[1]+' '+titleArray[2];
         };
+        //Get position of Ver Mas.. clicked
+        let more = document.getElementsByClassName('more');
+        for (let i = 0; i < more.length; i++) {
+            console.log(more[i]);
+            function getPos(index) {
+                more[i].onclick = function() {
+                    console.log(document.getElementsByClassName('gifTitle')[index].innerHTML.substring(1));
+                    searchMore(index);
+                }
+            }
+            getPos(i);
+        }
     })
-    .catch(error => console.error('error'))
+    .catch(error => console.error(error))
 
+
+
+//Click ver mas Suggested gifs
+function searchMore(pos) {
+    let gifTitle = document.getElementsByClassName('gifTitle')[pos].innerHTML.substring(1);
+    document.getElementById('searchBar').value = gifTitle
+    search();
+
+}
 //Trending gifs
 
 let trendingGif = fetch("https://api.giphy.com/v1/gifs/trending?api_key="+myKey+"&limit=14");
@@ -154,9 +189,17 @@ trendingGif
             let newDiv = document.createElement('div');
             let newGif = document.createElement('img');
             let gifTrend = document.getElementById('gifTrend');
-            newGif.className = 'newGif'
-            newDiv.className = 'gifCont'
+            let hoverBar = document.createElement('div');
+            let tags = document.createElement('span');
+            let gifTags = datos.data[i].title;
+            tagArray = gifTags.split(' ');
+            hoverBar.className = 'hoverBar';
+            tags.innerHTML = '#'+tagArray[0]+' #'+tagArray[1]+' #'+tagArray[2];
+            newGif.className = 'newGif';
+            newDiv.className = 'gifCont';
             newDiv.appendChild(newGif);
+            newDiv.appendChild(hoverBar);
+            hoverBar.appendChild(tags);
             gifTrend.appendChild(newDiv);
             document.getElementsByClassName('newGif')[i].src = url;
         }
