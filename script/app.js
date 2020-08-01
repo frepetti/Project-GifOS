@@ -40,8 +40,25 @@ function setDark() {
     document.getElementById('themeOp').classList.toggle('display');
 }
 
+//Open Crear Gif
+document.getElementById('createGif').addEventListener('click',function () {
+    document.getElementById('navBtns').classList.toggle('noDisplay');
+    document.getElementById('navBtns').classList.toggle('displayFlex');
+    let displayBtns = document.getElementById('navBtns').className;
+    let gifRecorder = 'displayFlex';
+    window.localStorage.setItem('gifRecorder',gifRecorder);
+    window.localStorage.setItem('displayBtns',displayBtns);
+    window.location.href = 'myGifos.html';
+});
 
-
+//Open Mis Guifos
+document.getElementById('misGifos').addEventListener('click',function () {
+    let displayBtns = document.getElementById('navBtns').className;
+    let gifRecorder = 'noDisplay';
+    window.localStorage.setItem('gifRecorder',gifRecorder);
+    window.localStorage.setItem('displayBtns',displayBtns);
+    window.location.href = 'myGifos.html';
+});
 
 //Search gifs
 

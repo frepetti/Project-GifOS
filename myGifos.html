@@ -19,11 +19,8 @@
                 <nav>
                     <a href="index.html" class="logoLight"><img src="./assets/gifOF_logo.png" alt="logo"></a>
                     <a href="index.html" class="logoDark"><img src="./assets/gifOF_logo_dark.png" alt="logo"></a>
-                    
-                    <div class="buttons">
-                        <a href="myGifos.html" class="createLnk">
-                            <button class="create" type="button">Crear Guifos</button>
-                        </a>
+                    <div id="navBtns" class="buttons displayFlex">
+                        <button id="createGif" class="create" type="button">Crear Guifos</button>
                         <div class="theme">
                             <div id="buttonGrp">
                                 <button type="button" id="selectTheme">Elegir Tema</button>
@@ -37,13 +34,13 @@
                             </div>
                         </div>
                         <div class="myGifos">
-                            <a href="myGifos.html"><span>M</span>is Guifos</a>
+                            <a class="misGifos"><span>M</span>is Guifos</a>
                         </div>
                     </div>
                 </nav>
             </header>
-            <section id="gifRecorder">
-                <div id="recorderIntro" class="noDisplay">
+            <section id="gifRecorder" class="displayFlex">
+                <div id="recorderIntro" class="display">
                     <div class="gradient">
                         <h4>Crear Guifos</h4>
                         <img src="./assets/button close.svg" alt="close">
@@ -65,12 +62,12 @@
                             <button type="button" id="startBtn" class="btn">Comenzar</button>
                     </div>
                 </div>
-                <div id="recorder" class="display">
+                <div id="recorder" class="noDisplay">
                     <div class="gradient">
-                        <h4>Un Chequeo Antes de Empezar</h4>
+                        <h4 id="recorderTitle">Un Chequeo Antes de Empezar</h4>
                         <img src="./assets/button close.svg" alt="close">
                     </div>
-                    <div id="recorderDisplay" class="display">
+                    <div id="recorderDisplay" class="noDisplay">
                         <video src="" id="gifRecord"></video>
                     </div>
                     <div id="recorderPreCapture"  class="display">
@@ -83,7 +80,7 @@
                     </div>
                     <div id="recorderLive" class="noDisplay">
                         <div class="counterLive">
-                            <span>00:00:03:06</span>
+                            <span>00:00:00:00</span>
                         </div>
                         <div id="stopGrp">
                             <button type="button" id="recordingBtn" class="stopBtn">
@@ -93,14 +90,14 @@
                         </div>
                     </div>
                     <div id="recorderPreview" class="noDisplay">
-                        <div class="counterProg">
-                            <div class="counterPvw">
-                                <span>00:00:03:06</span>
+                        <div class="counterPvw">
+                            <div class="counterProg">
+                                <span>00:00:00:00</span>
                             </div>
-                            <button id="play">
+                            <button id="play" class="playBtn">
                                 <img src="./assets/forward.svg" alt="play">
                             </button>
-                            <div class="progressBar">
+                            <div id='progressBarPvw' class="progressBar">
                                 <div class="progressBlock"></div>
                                 <div class="progressBlock"></div>
                                 <div class="progressBlock"></div>
@@ -126,9 +123,11 @@
                         </div>
                     </div>
                     <div id="uploadDisplay" class="noDisplay">
-                        <img src="./assets/globe_img.png" alt="Globe">
+                        <div class="icon">
+                            <img src="./assets/globe_img.png" alt="Globe">
+                        </div>
                         <h4>Estamos subiendo tu guifo…</h4>
-                        <div class="progressBar">
+                        <div id='uploadProgressBar' class="progressBar">
                             <div class="progressBlock"></div>
                             <div class="progressBlock"></div>
                             <div class="progressBlock"></div>
@@ -153,24 +152,30 @@
                             <div class="progressBlock"></div>
                             <div class="progressBlock"></div>
                         </div>
-                        <h6>Tiempo restante: <span>38 años</span> algunos minutos</h6>
+                        <h6>Tiempo restante: <s>38 años</s> algunos minutos</h6>
                     </div>
-                    <button id="cancelUpload" class="noDisplay">Cancelar</button>
+                    <div id="uploadingBtns" class="uploadingBtns noDisplay">
+                        <button id="cancelUpload">Cancelar</button>
+                    </div>
                 </div>
                 <div id="recorderEnd" class="noDisplay">
                     <div class="gradient">
-                        <h4>Crear Guifos</h4>
+                        <h4>Guifo creado con éxito</h4>
                         <img src="./assets/button close.svg" alt="close">
                     </div>
-                    <div id="recordedDisplay">
-
+                    <div class="windowCont">
+                        <div class="cont">
+                            <div id="recordedDisplay">
+    
+                            </div>
+                            <div class="createdBtn">
+                                <h4>Guifo creado con éxito</h4>
+                                <button type="button" id="copyBtn">Copiar Enlace Guifo</button>
+                                <button type="button" id="downloadBtn">Descargar Guifo</button>
+                            </div>
+                        </div>
+                        <button type="button" id="readyBtn">Listo</button>
                     </div>
-                    <div class="createdBtn">
-                        <h4>Guifo creado con éxito</h4>
-                        <button type="button" id="copyBtn">Copiar Enlace Guifo</button>
-                        <button type="button" id="downloadBtn">Descargar Guifo</button>
-                    </div>
-                    <button type="button" id="readyBtn">Listo</button>
                 </div>
             </section>
             <section class="my_Gifos">
@@ -190,7 +195,6 @@
             </div>
         </div>
     </div>
-    <script src="script/app.js"></script>
     <script src="script/Reproducto.js"></script>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
 </body>

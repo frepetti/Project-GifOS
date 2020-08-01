@@ -17,7 +17,7 @@
   display: none;
 }
 
-.light .container header nav .buttons .createLnk .create {
+.light .container header nav .buttons .create {
   background: #F7C9F3;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
@@ -25,7 +25,7 @@
   color: #110038;
 }
 
-.light .container header nav .buttons .createLnk .create:hover {
+.light .container header nav .buttons .create:hover {
   outline: 1px dotted #110038;
 }
 
@@ -77,11 +77,11 @@
           box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.light .container header nav .buttons .myGifos a {
+.light .container header nav .buttons .myGifos .misGifos {
   color: #110038;
 }
 
-.light .container header nav .buttons .myGifos a span {
+.light .container header nav .buttons .myGifos .misGifos span {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#110038), to(#110038));
   background-image: linear-gradient(#110038, #110038);
 }
@@ -316,6 +316,74 @@
   color: #FFFFFF;
 }
 
+.light .container #gifRecorder #recorder #recorderPreview .counterPvw .counterProg {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.light .container #gifRecorder #recorder #recorderPreview .counterPvw .counterProg span {
+  color: #110038;
+}
+
+.light .container #gifRecorder #recorder #recorderPreview .counterPvw .progressBar {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #FFFCFC;
+          box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #FFFCFC;
+}
+
+.light .container #gifRecorder #recorder #recorderPreview .counterPvw .progressBar .progressBlock {
+  background-color: #999999;
+}
+
+.light .container #gifRecorder #recorder #recorderPreview .counterPvw .playBtn {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.light .container #gifRecorder #recorder #recorderPreview .endBtns .btn {
+  border: 1px solid #110038;
+  color: #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.light .container #gifRecorder #recorder #recorderPreview .endBtns #repeatBtn {
+  background: #FFF4FD;
+}
+
+.light .container #gifRecorder #recorder #recorderPreview .endBtns #uploadBtn {
+  background: #F7C9F3;
+}
+
+.light .container #gifRecorder #recorder #uploadDisplay {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.light .container #gifRecorder #recorder #uploadDisplay .progressBar {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #FFFCFC;
+          box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #FFFCFC;
+}
+
+.light .container #gifRecorder #recorder #uploadDisplay .progressBar .progressBlock {
+  background-color: #999999;
+}
+
+.light .container #gifRecorder #recorder .uploadingBtns button {
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  color: #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
 .light .container #gifRecorder #recorderEnd {
   background: #E6E6E6;
   -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
@@ -329,6 +397,33 @@
 
 .light .container #gifRecorder #recorderEnd .gradient h4 {
   color: #FFFFFF;
+}
+
+.light .container #gifRecorder #recorderEnd .windowCont .cont #recordedDisplay {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.light .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn h4 {
+  color: #110038;
+}
+
+.light .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn button {
+  color: #110038;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.light .container #gifRecorder #recorderEnd .windowCont #readyBtn {
+  color: #110038;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .light .container .my_Gifos .misGifos {
@@ -406,7 +501,7 @@
   display: none;
 }
 
-.dark .container header nav .buttons .createLnk .create {
+.dark .container header nav .buttons .create {
   background: #EE3EFE;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
@@ -414,7 +509,7 @@
   color: #FFFFFF;
 }
 
-.dark .container header nav .buttons .createLnk .create:hover {
+.dark .container header nav .buttons .create:hover {
   outline: 1px dotted #110038;
 }
 
@@ -471,7 +566,7 @@
           box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.dark .container header nav .buttons .myGifos a {
+.dark .container header nav .buttons .myGifos .misGifos {
   color: #FFFFFF;
 }
 
@@ -706,19 +801,117 @@
   color: #FFFFFF;
 }
 
+.dark .container #gifRecorder #recorder #recorderPreview .counterPvw .counterProg {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.dark .container #gifRecorder #recorder #recorderPreview .counterPvw .counterProg span {
+  color: #110038;
+}
+
+.dark .container #gifRecorder #recorder #recorderPreview .counterPvw .progressBar {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #E6E6E6;
+          box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #E6E6E6;
+}
+
+.dark .container #gifRecorder #recorder #recorderPreview .counterPvw .progressBar .progressBlock {
+  background-color: #999999;
+}
+
+.dark .container #gifRecorder #recorder #recorderPreview .counterPvw .playBtn {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .container #gifRecorder #recorder #recorderPreview .endBtns .btn {
+  border: 1px solid #B4B4B4;
+  color: #FFFFFF;
+}
+
+.dark .container #gifRecorder #recorder #recorderPreview .endBtns #repeatBtn {
+  background: #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+          box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
+
+.dark .container #gifRecorder #recorder #recorderPreview .endBtns #uploadBtn {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.dark .container #gifRecorder #recorder #uploadDisplay {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.dark .container #gifRecorder #recorder #uploadDisplay .progressBar {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #FFFCFC;
+          box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #FFFCFC;
+}
+
+.dark .container #gifRecorder #recorder #uploadDisplay .progressBar .progressBlock {
+  background-color: #999999;
+}
+
+.dark .container #gifRecorder #recorder .uploadingBtns button {
+  color: #FFFFFF;
+  background: #110038;
+  border: 1px solid #B4B4B4;
+  -webkit-box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+          box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
+
 .dark .container #gifRecorder #recorderEnd {
-  background: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .dark .container #gifRecorder #recorderEnd .gradient {
-  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
-  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
 }
 
 .dark .container #gifRecorder #recorderEnd .gradient h4 {
   color: #FFFFFF;
+}
+
+.dark .container #gifRecorder #recorderEnd .windowCont .cont #recordedDisplay {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.dark .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn h4 {
+  color: #110038;
+}
+
+.dark .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn button {
+  color: #FFFFFF;
+  background: #110038;
+  border: 1px solid #B4B4B4;
+  -webkit-box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+          box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
+
+.dark .container #gifRecorder #recorderEnd .windowCont #readyBtn {
+  color: #FFFFFF;
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .dark .container .my_Gifos .misGifos {
@@ -814,20 +1007,14 @@ body .container header nav {
 }
 
 body .container header nav .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-body .container header nav .buttons .createLnk {
+body .container header nav .buttons .create {
   margin-right: 16px;
   display: block;
-}
-
-body .container header nav .buttons .createLnk .create {
   width: 144px;
   height: 36px;
   font-family: "Chakra Petch", sans-serif;
@@ -837,7 +1024,7 @@ body .container header nav .buttons .createLnk .create {
   line-height: 18px;
 }
 
-body .container header nav .buttons .createLnk .create:hover {
+body .container header nav .buttons .create:hover {
   outline-offset: -5px;
 }
 
@@ -927,7 +1114,7 @@ body .container header nav .buttons .myGifos {
   width: 100px;
 }
 
-body .container header nav .buttons .myGifos a {
+body .container header nav .buttons .myGifos .misGifos {
   font-family: "Chakra Petch";
   padding-left: 5px;
   font-size: 16px;
@@ -935,7 +1122,7 @@ body .container header nav .buttons .myGifos a {
   line-height: 18px;
 }
 
-body .container header nav .buttons .myGifos a span {
+body .container header nav .buttons .myGifos .misGifos span {
   background-position: bottom center;
   background-size: 8px 1.5px;
   background-repeat: no-repeat;
@@ -944,6 +1131,7 @@ body .container header nav .buttons .myGifos a span {
 
 body .container header nav .buttons .myGifos:hover {
   outline-offset: -5px;
+  cursor: pointer;
 }
 
 body .container header .search {
@@ -1186,9 +1374,6 @@ body .container #gifRecorder {
   margin: 0 auto;
   margin-top: 59px;
   margin-bottom: 153px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1440,16 +1625,40 @@ body .container #gifRecorder #recorder #recorderPreview {
   padding: 0 16px 16px 11px;
 }
 
-body .container #gifRecorder #recorder #recorderPreview .counterProg {
+body .container #gifRecorder #recorder #recorderPreview .counterPvw {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body .container #gifRecorder #recorder #recorderPreview .counterProg #play {
+body .container #gifRecorder #recorder #recorderPreview .counterPvw .counterProg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 36px;
+  width: 124px;
+}
+
+body .container #gifRecorder #recorder #recorderPreview .counterPvw .counterProg span {
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+body .container #gifRecorder #recorder #recorderPreview .counterPvw .playBtn {
+  margin-left: 24px;
   height: 20px;
   width: 20px;
   display: -webkit-box;
@@ -1460,19 +1669,128 @@ body .container #gifRecorder #recorder #recorderPreview .counterProg #play {
           justify-content: center;
 }
 
-body .container #gifRecorder #recorder #recorderPreview .counterProg .progressBar {
+body .container #gifRecorder #recorder #recorderPreview .counterPvw .progressBar {
   width: 240px;
   height: 24px;
+  margin-left: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .container #gifRecorder #recorder #recorderPreview .counterPvw .progressBar .progressBlock {
+  position: relative;
+  top: 2px;
+  height: 20px;
+  width: 12px;
 }
 
 body .container #gifRecorder #recorder #recorderPreview .endBtns .btn {
   height: 36px;
   width: 144px;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+body .container #gifRecorder #recorder #uploadDisplay {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 440px;
+  width: 838px;
+  margin: 8px 14px 21px 8px;
+}
+
+body .container #gifRecorder #recorder #uploadDisplay .icon {
+  height: 48px;
+  width: 48px;
+}
+
+body .container #gifRecorder #recorder #uploadDisplay h4 {
+  margin-top: 8px;
+  text-align: center;
+  font-family: "Chakra Petch";
+  font-weight: 700;
+}
+
+body .container #gifRecorder #recorder #uploadDisplay .progressBar {
+  margin-top: 39px;
+  height: 24px;
+  width: 324px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .container #gifRecorder #recorder #uploadDisplay .progressBar .progressBlock {
+  position: relative;
+  top: 2px;
+  height: 20px;
+  width: 12px;
+}
+
+body .container #gifRecorder #recorder #uploadDisplay h6 {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Chakra Petch";
+  font-size: 12px;
+  color: rgba(17, 0, 56, 0.64);
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 14px;
+}
+
+body .container #gifRecorder #recorder #uploadDisplay h6 s {
+  text-decoration: line-through;
+}
+
+body .container #gifRecorder #recorder .uploadingBtns {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  right: 16px;
+}
+
+body .container #gifRecorder #recorder .uploadingBtns button {
+  height: 36px;
+  width: 144px;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 36px;
 }
 
 body .container #gifRecorder #recorderEnd {
-  width: 684px;
-  height: 386px;
+  width: 721px;
+  height: 391px;
 }
 
 body .container #gifRecorder #recorderEnd .gradient {
@@ -1484,7 +1802,7 @@ body .container #gifRecorder #recorderEnd .gradient {
   display: flex;
   top: 3px;
   margin-left: 3px;
-  width: 854px;
+  width: 715px;
   height: 24px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1498,6 +1816,85 @@ body .container #gifRecorder #recorderEnd .gradient h4 {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0;
+}
+
+body .container #gifRecorder #recorderEnd .windowCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 364px;
+}
+
+body .container #gifRecorder #recorderEnd .windowCont .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 27px;
+  margin: 0 46px 0 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container #gifRecorder #recorderEnd .windowCont .cont #recordedDisplay {
+  height: 196px;
+  width: 371px;
+}
+
+body .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+body .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn h4 {
+  font-family: "Chakra Petch";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+body .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn button {
+  height: 36px;
+  width: 256px;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+body .container #gifRecorder #recorderEnd .windowCont #readyBtn {
+  height: 36px;
+  width: 144px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 46px;
+  margin-bottom: 44px;
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
 }
 
 body .container .my_Gifos {
