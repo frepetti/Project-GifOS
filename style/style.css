@@ -1516,6 +1516,11 @@ body .container #gifRecorder #recorder #recorderDisplay video {
      object-fit: cover;
 }
 
+body .container #gifRecorder #recorder #recorderDisplay #recordedGif {
+  height: 440px;
+  width: 838px;
+}
+
 body .container #gifRecorder #recorder #recorderPreCapture #captureGrp {
   display: -webkit-box;
   display: -ms-flexbox;

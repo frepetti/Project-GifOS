@@ -174,7 +174,6 @@ suggestedGifs
         //Get position of Ver Mas.. clicked
         let more = document.getElementsByClassName('more');
         for (let i = 0; i < more.length; i++) {
-            console.log(more[i]);
             function getPos(index) {
                 more[i].onclick = function() {
                     console.log(document.getElementsByClassName('gifTitle')[index].innerHTML.substring(1));
