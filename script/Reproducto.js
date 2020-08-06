@@ -298,10 +298,10 @@ document.getElementById('cancelUpload').addEventListener('click',function () {
     recorderWindow.classList.toggle('noDisplay');
     recorderIntro.classList.toggle('noDisplay');
     recorderIntro.classList.toggle('display');
-    document.getElementById('uploadDisplay').classList.toggle('displayFlex');
-    document.getElementById('uploadDisplay').classList.toggle('noDisplay');
-    document.getElementsByClassName('uploadingBtns')[0].classList.toggle('noDisplay');
-    document.getElementsByClassName('uploadingBtns')[0].classList.toggle('displayFlex');
+    uploadDisplay.classList.toggle('displayFlex');
+    uploadDisplay.classList.toggle('noDisplay');
+    uploadingBtns[0].classList.toggle('noDisplay');
+    uploadingBtns[0].classList.toggle('displayFlex');
 });
 
 //Load My Gifs
