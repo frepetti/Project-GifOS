@@ -141,7 +141,7 @@ function autoSearch() {
 
 //Suggested gifs
 
-let suggestedGifs = fetch("https://api.giphy.com/v1/gifs/trending?api_key="+myKey+"&offset=20&limit=4");
+let suggestedGifs = fetch("https://api.giphy.com/v1/gifs/trending?api_key="+myKey+"&limit=4");
 suggestedGifs
     .then(response => response.json())
     .then(datos => {
@@ -201,12 +201,12 @@ function searchMore(pos) {
 }
 //Trending gifs
 
-let trendingGif = fetch("https://api.giphy.com/v1/gifs/trending?api_key="+myKey+"&limit=14");
+let trendingGif = fetch("https://api.giphy.com/v1/gifs/trending?api_key="+myKey+"&offset=4&limit=14");
 trendingGif
     .then(response => response.json())
     .then(datos => {
         for (let i = 0; i < datos.data.length; i++)     {
-            let url = (datos.data[i].images.downsized.url);
+            let url = (datos.data[i].images.original.url);
             let newDiv = document.createElement('div');
             let newGif = document.createElement('img');
             let gifTrend = document.getElementById('gifTrend');
