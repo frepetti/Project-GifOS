@@ -51,7 +51,6 @@ function loadTheme() {
     } else{
         theme = window.localStorage.getItem('theme');
     }
-
     document.getElementById('theme').className = theme;
 }
 //Open Theme Menu
