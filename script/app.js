@@ -208,7 +208,7 @@ trendingGif
             let hoverBar = document.createElement('div');
             let tags = document.createElement('span');
             let gifTags = datos.data[i].title;
-            tagArray = gifTags.split(' ');
+            let tagArray = gifTags.split(' ');
             hoverBar.className = 'hoverBar';
             tags.innerHTML = '#'+tagArray[0]+' #'+tagArray[1]+' #'+tagArray[2];
             newGif.className = 'newGif';
@@ -220,7 +220,7 @@ trendingGif
             document.getElementsByClassName('newGif')[i].src = url;
         }
     })
-    .catch(error => console.error('error'))
+    .catch(error => console.error(error))
 /*
 function createGifCont() {
     let newDiv = document.createElement('div');

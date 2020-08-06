@@ -6,7 +6,28 @@ const uploadDisplay = document.getElementById('uploadDisplay');
 const recorderDisplay = document.getElementById('recorderDisplay');
 const uploadBtn = document.getElementById('uploadBtn');
 const recordedGif = document.getElementById('recordedGif');
-const myKey = "RoFq898LQn130ZY7iP2TBlrDuefnjvV0";
+const myKey = "WHWM3Vid2myOLmAPlMVjp7Lb106B63ln";
+const recorderWindow = document.getElementById('recorder');
+const recorderEnd = document.getElementById('recorderEnd');
+const recordedGifPvw = document.getElementById('recordedGifPvw');
+const copyBtn = document.getElementById('copyBtn');
+const downloadBtn = document.getElementById('downloadBtn');
+const readyBtn = document.getElementById('readyBtn');
+const gifos = document.getElementById('gifos');
+const gifLink = document.getElementById('gifLink');
+const buttonGrp = document.getElementById('buttonGrp');
+const light = document.getElementById('light');
+const dark = document.getElementById('dark');
+const createGif = document.getElementById('createGif');
+const repeatBtn = document.getElementById('repeatBtn');
+const closeBtn1 = document.getElementById('close1');
+const closeBtn2 = document.getElementById('close2');
+const closeBtn3 = document.getElementById('close3');
+const gifRecorderWin = document.getElementById('gifRecorder');
+const navBtns = document.getElementById('navBtns');
+const recorderPreCapture = document.getElementById('recorderPreCapture');
+const recorderLive = document.getElementById('recorderLive');
+const recorderIntro = document.getElementById('recorderIntro');
 
 //Get navBtns display on opening window
 window.onload = displayItems();
@@ -14,8 +35,8 @@ window.onload = displayItems();
 function displayItems() {
     let displayBtns = window.localStorage.getItem('displayBtns');
     let gifRecorder = window.localStorage.getItem('gifRecorder');
-    document.getElementById('navBtns').className = displayBtns;
-    document.getElementById('gifRecorder').className = gifRecorder;
+    navBtns.className = displayBtns;
+    gifRecorderWin.className = gifRecorder;
     window.localStorage.removeItem('displayBtns');
     window.localStorage.removeItem('gifRecorder');
 }
@@ -30,7 +51,7 @@ function loadTheme() {
 
 //Open Theme Menu
 
-document.getElementById('buttonGrp').addEventListener('click',openMenu);
+buttonGrp.addEventListener('click',openMenu);
 
 function openMenu() {
     let themeOp = document.getElementById("themeOp")
@@ -39,8 +60,8 @@ function openMenu() {
 
 //Switch Theme
 
-document.getElementById('light').addEventListener('click', setLight);
-document.getElementById('dark').addEventListener('click', setDark);
+light.addEventListener('click', setLight);
+dark.addEventListener('click', setDark);
 
 function setLight() {
     document.getElementById('theme').className = 'light';
@@ -61,19 +82,19 @@ function setDark() {
 }
 
 //Open Crear Gif
-document.getElementById('createGif').addEventListener('click',function () {
-    document.getElementById('navBtns').classList.toggle('noDisplay');
-    document.getElementById('navBtns').classList.toggle('displayFlex');
-    document.getElementById('gifRecorder').classList.toggle('noDisplay');
-    document.getElementById('gifRecorder').classList.toggle('displayFlex');
+createGif.addEventListener('click',function () {
+    navBtns.classList.toggle('noDisplay');
+    navBtns.classList.toggle('displayFlex');
+    gifRecorderWin.classList.toggle('noDisplay');
+    gifRecorderWin.classList.toggle('displayFlex');
 });
 
 //Cancel Crear Gif
 document.getElementById('cancelBtn').addEventListener('click',function () {
-    document.getElementById('navBtns').classList.toggle('noDisplay');
-    document.getElementById('navBtns').classList.toggle('displayFlex');
-    document.getElementById('gifRecorder').classList.toggle('noDisplay');
-    document.getElementById('gifRecorder').classList.toggle('displayFlex');
+    navBtns.classList.toggle('noDisplay');
+    navBtns.classList.toggle('displayFlex');
+    gifRecorderWin.classList.toggle('noDisplay');
+    gifRecorderWin.classList.toggle('displayFlex');
 
 });
 
@@ -82,14 +103,14 @@ document.getElementById('cancelBtn').addEventListener('click',function () {
 let myStream;
 
 document.getElementById('startBtn').addEventListener('click',function () {
-    document.getElementById('recorderIntro').classList.toggle('display');
-    document.getElementById('recorderIntro').classList.toggle('noDisplay');
-    document.getElementById('recorder').classList.toggle('display');
-    document.getElementById('recorder').classList.toggle('noDisplay');
-    document.getElementById('recorderDisplay').classList.toggle('noDisplay');
-    document.getElementById('recorderDisplay').classList.toggle('display');
-    document.getElementById('recorderPreCapture').classList.toggle('display');
-    document.getElementById('recorderPreCapture').classList.toggle('noDisplay');
+    recorderIntro.classList.toggle('display');
+    recorderIntro.classList.toggle('noDisplay');
+    recorderWindow.classList.toggle('display');
+    recorderWindow.classList.toggle('noDisplay');
+    recorderDisplay.classList.toggle('noDisplay');
+    recorderDisplay.classList.toggle('display');
+    recorderPreCapture.classList.toggle('display');
+    recorderPreCapture.classList.toggle('noDisplay');
     getStream();
 });
 
@@ -122,22 +143,21 @@ function record() {
 };
 
 
-
 //Begin Video recording
 document.getElementById('captureCam').addEventListener('click',record);
 document.getElementById('captureBtn').addEventListener('click',record);
 document.getElementById('captureCam').addEventListener('click',function () {
-    document.getElementById('recorderPreCapture').classList.toggle('display');
-    document.getElementById('recorderPreCapture').classList.toggle('noDisplay');
-    document.getElementById('recorderLive').classList.toggle('displayFlex');
-    document.getElementById('recorderLive').classList.toggle('noDisplay');
+    recorderPreCapture.classList.toggle('display');
+    recorderPreCapture.classList.toggle('noDisplay');
+    recorderLive.classList.toggle('displayFlex');
+    recorderLive.classList.toggle('noDisplay');
     document.getElementById('recorderTitle').innerHTML = 'Capturando tu Guifo';
 });
 document.getElementById('captureBtn').addEventListener('click',function () {
-    document.getElementById('recorderPreCapture').classList.toggle('display');
-    document.getElementById('recorderPreCapture').classList.toggle('noDisplay');
-    document.getElementById('recorderLive').classList.toggle('displayFlex');
-    document.getElementById('recorderLive').classList.toggle('noDisplay');
+    recorderPreCapture.classList.toggle('display');
+    recorderPreCapture.classList.toggle('noDisplay');
+    recorderLive.classList.toggle('displayFlex');
+    recorderLive.classList.toggle('noDisplay');
     document.getElementById('recorderTitle').innerHTML = 'Capturando tu Guifo';
 });
 
@@ -145,15 +165,15 @@ document.getElementById('captureBtn').addEventListener('click',function () {
 document.getElementById('recordingBtn').addEventListener('click',stopRecord);
 document.getElementById('stopBtn').addEventListener('click',stopRecord);
 document.getElementById('recordingBtn').addEventListener('click',function () {
-    document.getElementById('recorderLive').classList.toggle('displayFlex');
-    document.getElementById('recorderLive').classList.toggle('noDisplay');
+    recorderLive.classList.toggle('displayFlex');
+    recorderLive.classList.toggle('noDisplay');
     recorderPreview.classList.toggle('displayFlex');
     recorderPreview.classList.toggle('noDisplay');
     document.getElementById('recorderTitle').innerHTML = 'Vista Previa';
 });
 document.getElementById('stopBtn').addEventListener('click',function () {
-    document.getElementById('recorderLive').classList.toggle('displayFlex');
-    document.getElementById('recorderLive').classList.toggle('noDisplay');
+    recorderLive.classList.toggle('displayFlex');
+    recorderLive.classList.toggle('noDisplay');
     recorderPreview.classList.toggle('displayFlex');
     recorderPreview.classList.toggle('noDisplay');
     document.getElementById('recorderTitle').innerHTML = 'Vista Previa';
@@ -178,17 +198,17 @@ function processRecording() {
     form.append('file', blob, 'miGif.gif');
     console.log(form.get('file'));
     console.log(blob);
-    document.getElementById('recordedGif').src = URL.createObjectURL(blob);
+    recordedGif.src = URL.createObjectURL(blob);
 }
 
 
 //Repetir Captura
 
-document.getElementById('repeatBtn').addEventListener('click',function () {
+repeatBtn.addEventListener('click',function () {
     recorderPreview.classList.toggle('displayFlex');
     recorderPreview.classList.toggle('noDisplay');
-    document.getElementById('recorderPreCapture').classList.toggle('display');
-    document.getElementById('recorderPreCapture').classList.toggle('noDisplay');
+    recorderPreCapture.classList.toggle('display');
+    recorderPreCapture.classList.toggle('noDisplay');
     document.getElementById('recorderTitle').innerHTML = 'Un Chequeo Antes de Empezar';
     recordedGif.classList.toggle('noDisplay');
     recordedGif.classList.toggle('display');
@@ -198,8 +218,8 @@ document.getElementById('repeatBtn').addEventListener('click',function () {
 
 //Upload Guifo
 
-document.getElementById('uploadBtn').addEventListener('click',uploadGif);
-document.getElementById('uploadBtn').addEventListener('click',function () {
+uploadBtn.addEventListener('click',uploadGif);
+uploadBtn.addEventListener('click',function () {
     recorderDisplay.classList.toggle('display');
     recorderDisplay.classList.toggle('noDisplay');
     uploadDisplay.classList.toggle('displayFlex');
@@ -236,11 +256,23 @@ function uploadGif() {
         
         .then((json) => {
             let id = json.data.id;
-            let gifData = JSON.stringify(json);
             console.log(id);
-            console.log(gifData);
-            localStorage.setItem(id, gifData);
             createdGifURL = json.data.images.original.url;
+            localStorage.setItem(id, createdGifURL);
+            
+            uploadDisplay.classList.toggle('displayFlex');
+            uploadDisplay.classList.toggle('noDisplay');
+            recorderWindow.classList.toggle('display');
+            recorderWindow.classList.toggle('noDisplay');
+            recorderEnd.classList.toggle('display');
+            recorderEnd.classList.toggle('noDisplay');
+            gifLink.value = createdGifURL;
+            recordedGifPvw.src = createdGifURL;
+            let newGifoDiv = document.createElement('div');
+            let newGifo = document.createElement('img');
+            newGifoDiv.appendChild(newGifo);
+            gifos.appendChild(newGifoDiv);
+            newGifo.src = createdGifURL;
         });
     })
 
@@ -258,17 +290,40 @@ function uploadGif() {
 
 document.getElementById('cancelUpload').addEventListener('click',cancelUpload);
 document.getElementById('cancelUpload').addEventListener('click',function () {
-    document.getElementById('recorder').classList.toggle('display');
-    document.getElementById('recorder').classList.toggle('noDisplay');
-    document.getElementById('recorderIntro').classList.toggle('noDisplay');
-    document.getElementById('recorderIntro').classList.toggle('display');
+    recorderWindow.classList.toggle('display');
+    recorderWindow.classList.toggle('noDisplay');
+    recorderIntro.classList.toggle('noDisplay');
+    recorderIntro.classList.toggle('display');
     document.getElementById('uploadDisplay').classList.toggle('displayFlex');
     document.getElementById('uploadDisplay').classList.toggle('noDisplay');
     document.getElementsByClassName('uploadingBtns')[0].classList.toggle('noDisplay');
     document.getElementsByClassName('uploadingBtns')[0].classList.toggle('displayFlex');
 });
 
+//Load My Gifs
 
+function loadGifs() {
+    gifos.innerHTML = '';
+    let gifArray = [];
+    for (let i = 0; i < localStorage.length; i++) {
+        gifArray.push(localStorage.key(i));
+    };
+    if (gifArray.indexOf('theme') !== -1 ) {
+        let indexTheme = gifArray.indexOf('theme');
+        gifArray.splice(indexTheme,1)
+    };
+    for (let i = 0; i < gifArray.length; i++) {
+        let gifId = gifArray[i];
+        let storedGifUrl = localStorage.getItem(gifId);
+        let storedGifoDiv = document.createElement('div');
+        let storedGifo = document.createElement('img');
+        storedGifoDiv.appendChild(storedGifo);
+        gifos.appendChild(storedGifoDiv);
+        storedGifo.src = storedGifUrl;
+    };
+};
+
+loadGifs();
 
 //Cancel upload
 
@@ -276,3 +331,75 @@ function cancelUpload() {
     console.log('Cancel upload')
 }
 
+//Copy Gifo
+
+copyBtn.addEventListener('click',copyGif);
+function copyGif(){
+    gifLink.select();
+    document.execCommand('copy');
+};
+
+//Download gifo
+downloadBtn.addEventListener('click',downloadGif);
+function downloadGif() {
+    window.open(createdGifURL,'_blank');
+    console.log('ke paso ahi');
+};
+
+//Ready Btn
+
+readyBtn.addEventListener('click',returnCreateGif);
+function returnCreateGif() {
+    recorderEnd.classList.toggle('display');
+    recorderEnd.classList.toggle('noDisplay');
+    recorderPreview.classList.toggle('displayFlex');
+    recorderPreview.classList.toggle('noDisplay');
+}
+
+closeBtn1.addEventListener('click',function () {
+    navBtns.classList.toggle('noDisplay');
+    navBtns.classList.toggle('displayFlex');
+    gifRecorderWin.classList.toggle('noDisplay');
+    gifRecorderWin.classList.toggle('displayFlex');
+});
+
+closeBtn2.addEventListener('click',function () {
+    navBtns.classList.toggle('noDisplay');
+    navBtns.classList.toggle('displayFlex');
+    gifRecorderWin.classList.toggle('noDisplay');
+    gifRecorderWin.classList.toggle('displayFlex');
+});
+
+closeBtn3.addEventListener('click',function () {
+    navBtns.classList.toggle('noDisplay');
+    navBtns.classList.toggle('displayFlex');
+    gifRecorderWin.classList.toggle('noDisplay');
+    gifRecorderWin.classList.toggle('displayFlex');
+    recorderWindow.classList.remove('display');
+    recorderIntro.classList.toggle('display');
+    recorderIntro.classList.toggle('noDisplay');
+    if (!recorderWindow.classList.contains('noDisplay')) {
+        recorderWindow.classList.toggle('noDisplay')
+    }
+    recorderDisplay.classList.remove('display');
+    if (!recorderDisplay.classList.contains('noDisplay')) {
+        recorderDisplay.classList.toggle('noDisplay')
+    }
+    recorderPreCapture.classList.remove('display');
+    if (!recorderPreCapture.classList.contains('noDisplay')) {
+        recorderPreCapture.classList.toggle('noDisplay')
+    }
+    recorderLive.classList.remove('displayFlex');
+    if (!recorderLive.classList.contains('noDisplay')) {
+        recorderLive.classList.toggle('noDisplay')
+    }
+    uploadDisplay.classList.remove('displayFlex');
+    if (!uploadDisplay.classList.contains('noDisplay')) {
+        uploadDisplay.classList.toggle('noDisplay')
+    }
+    uploadingBtns.classList.remove('displayFlex');
+    if (!uploadingBtns.classList.contains('noDisplay')) {
+        uploadingBtns.classList.toggle('noDisplay')
+    }
+    stopRecord()
+});

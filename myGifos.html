@@ -43,7 +43,7 @@
                 <div id="recorderIntro" class="display">
                     <div class="gradient">
                         <h4>Crear Guifos</h4>
-                        <img src="./assets/button close.svg" alt="close">
+                        <img src="./assets/button close.svg" alt="close" id="close1">
                     </div>
                     <div class="recorderTitle">
                         <img src="./assets/window img.png" alt="Window">
@@ -65,7 +65,7 @@
                 <div id="recorder" class="noDisplay">
                     <div class="gradient">
                         <h4 id="recorderTitle">Un Chequeo Antes de Empezar</h4>
-                        <img src="./assets/button close.svg" alt="close">
+                        <img src="./assets/button close.svg" alt="close" id="close3">
                     </div>
                     <div id="recorderDisplay" class="noDisplay">
                         <video src="" id="gifRecord"></video>
@@ -162,36 +162,30 @@
                 <div id="recorderEnd" class="noDisplay">
                     <div class="gradient">
                         <h4>Guifo creado con éxito</h4>
-                        <img src="./assets/button close.svg" alt="close">
+                        <img src="./assets/button close.svg" alt="close" id="close2">
                     </div>
                     <div class="windowCont">
                         <div class="cont">
                             <div id="recordedDisplay">
-                                <video src="" id="recordedGif"></video>
+                                <img src="" id="recordedGifPvw"></img>
                             </div>
                             <div class="createdBtn">
                                 <h4>Guifo creado con éxito</h4>
                                 <button type="button" id="copyBtn">Copiar Enlace Guifo</button>
                                 <button type="button" id="downloadBtn">Descargar Guifo</button>
+                                <textarea id="gifLink" type="text" value=""></textarea>
                             </div>
                         </div>
                         <button type="button" id="readyBtn">Listo</button>
                     </div>
                 </div>
             </section>
-            <section class="my_Gifos">
+            <section id='my_Gifos' class="my_Gifos">
                 <div class="misGifos">
                     <h4>Mis guifos:</h4>
                 </div>
-                <div class="gifos">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div id='gifos' class="gifos">
+
                 </div>
             </div>
         </div>

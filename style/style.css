@@ -1545,8 +1545,9 @@ body .container #gifRecorder #recorder #recorderPreCapture #captureGrp #captureC
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .container #gifRecorder #recorder #recorderPreCapture #captureGrp #captureBtn {
@@ -1609,8 +1610,9 @@ body .container #gifRecorder #recorder #recorderLive #stopGrp #recordingBtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .container #gifRecorder #recorder #recorderLive #stopGrp #stopBtn {
@@ -1672,6 +1674,9 @@ body .container #gifRecorder #recorder #recorderPreview .counterPvw .playBtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .container #gifRecorder #recorder #recorderPreview .counterPvw .progressBar {
@@ -1725,6 +1730,15 @@ body .container #gifRecorder #recorder #uploadDisplay {
 body .container #gifRecorder #recorder #uploadDisplay .icon {
   height: 48px;
   width: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .container #gifRecorder #recorder #uploadDisplay h4 {
@@ -1849,8 +1863,15 @@ body .container #gifRecorder #recorderEnd .windowCont .cont {
 }
 
 body .container #gifRecorder #recorderEnd .windowCont .cont #recordedDisplay {
-  height: 196px;
+  height: 278px;
   width: 371px;
+}
+
+body .container #gifRecorder #recorderEnd .windowCont .cont #recordedDisplay img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
 body .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn {
@@ -1878,6 +1899,10 @@ body .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn h4 {
   line-height: 22px;
 }
 
+body .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn textarea {
+  opacity: 0;
+}
+
 body .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn button {
   height: 36px;
   width: 256px;
@@ -1885,7 +1910,7 @@ body .container #gifRecorder #recorderEnd .windowCont .cont .createdBtn button {
   font-size: 16px;
   letter-spacing: 0;
   text-align: center;
-  line-height: 18px;
+  line-height: 36px;
 }
 
 body .container #gifRecorder #recorderEnd .windowCont #readyBtn {
@@ -1899,7 +1924,7 @@ body .container #gifRecorder #recorderEnd .windowCont #readyBtn {
   font-size: 16px;
   letter-spacing: 0;
   text-align: center;
-  line-height: 18px;
+  line-height: 36px;
 }
 
 body .container .my_Gifos {
@@ -1928,21 +1953,24 @@ body .container .my_Gifos .misGifos h4 {
 
 body .container .my_Gifos .gifos {
   margin-top: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px, 16px;
 }
 
 body .container .my_Gifos .gifos div {
-  border: red solid 2px;
   height: 298px;
   width: 288px;
   margin-bottom: 16px;
+}
+
+body .container .my_Gifos .gifos div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 288px;
 }
 
 body .container #trending {

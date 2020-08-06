@@ -411,7 +411,7 @@ body{
                             width: 36px;
                             display: flex;
                             justify-content: center;
-                            align-content: center;
+                            align-items: center;
                         }
                         #captureBtn{
                             font-family: $font1;
@@ -450,7 +450,7 @@ body{
                             width: 36px;
                             display: flex;
                             justify-content: center;
-                            align-content: center;
+                            align-items: center;
                         }
                         #stopBtn{
                             height: 36px;
@@ -489,6 +489,7 @@ body{
                             width: 20px;
                             display: flex;
                             justify-content: center;
+                            align-items: center;
                         }
                         .progressBar{
                             width: 240px;
@@ -527,6 +528,9 @@ body{
                     .icon{
                         height: 48px;
                         width: 48px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                     h4 {
                         margin-top: 8px;
@@ -611,8 +615,13 @@ body{
                         margin: 0 46px 0 24px;
                         justify-content: space-between;
                         #recordedDisplay{
-                            height: 196px;
+                            height: 278px;
                             width: 371px;
+                            img{
+                                object-fit: cover;
+                                overflow: hidden;
+                                width: 100%;
+                            }
                         }
                         .createdBtn{
                             display: flex;
@@ -627,6 +636,9 @@ body{
                                 letter-spacing: 0;
                                 line-height: 22px;
                             }
+                            textarea{
+                                opacity: 0;
+                            }
                             button{
                                 height: 36px;
                                 width: 256px;
@@ -634,7 +646,7 @@ body{
                                 font-size: 16px;
                                 letter-spacing: 0;
                                 text-align: center;
-                                line-height: 18px;
+                                line-height: 36px;
                             }
                         }
                     }
@@ -648,7 +660,7 @@ body{
                         font-size: 16px;
                         letter-spacing: 0;
                         text-align: center;
-                        line-height: 18px;
+                        line-height: 36px;
                     }
                 }
             }
@@ -671,14 +683,18 @@ body{
             }
             .gifos {
                 margin-top: 16px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 16px, 16px;
                 div{
-                    border: red solid 2px;
                     height: 298px;
                     width: 288px;
                     margin-bottom: 16px;
+                    img{
+                        object-fit: cover;
+                        height: 100%;
+                        width: 288px;
+                    }
                 }
             }
         }
