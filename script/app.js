@@ -4,7 +4,13 @@ const myKey = "RoFq898LQn130ZY7iP2TBlrDuefnjvV0";
 window.onload = loadTheme()
 
 function loadTheme() {
-    let theme = window.localStorage.getItem('theme');
+    let theme;
+    if (!window.localStorage.getItem('theme')) {
+        theme = 'light'
+    } else{
+        theme = window.localStorage.getItem('theme');
+    }
+
     document.getElementById('theme').className = theme;
 }
 

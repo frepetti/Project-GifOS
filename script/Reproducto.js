@@ -45,10 +45,15 @@ function displayItems() {
 window.onload = loadTheme();
 
 function loadTheme() {
-    let theme = window.localStorage.getItem('theme');
-    document.getElementById('theme').className = theme;
-};
+    let theme;
+    if (!window.localStorage.getItem('theme')) {
+        theme = 'light'
+    } else{
+        theme = window.localStorage.getItem('theme');
+    }
 
+    document.getElementById('theme').className = theme;
+}
 //Open Theme Menu
 
 buttonGrp.addEventListener('click',openMenu);
